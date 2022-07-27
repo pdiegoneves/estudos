@@ -1,0 +1,35 @@
+#instalar typeORM
+yarn add typeorm pg
+
+
+#criar migrations
+yarn typeorm migration:create -n CreateAppointments
+
+#executar migrations
+yarn typeorm migration:run
+
+#reverter migration (para correções)
+yarn typeorm migration:revert
+
+yarn add reflect-metadata
+
+
+#criar models de usuários
+yarn typeorm migration:create -n CreateUsers
+
+
+#criptografar senhas
+yarn add bcryptjs
+
+#JWT
+yarn add jsonwebtoken
+yarn add -D @types/jsonwebtoken
+
+
+#para upload de imagens
+yarn add multer
+yarn add -D @types/multer
+
+
+#para que o express possa tratar erros em rotas assíncronas
+yarn add express-async-errors

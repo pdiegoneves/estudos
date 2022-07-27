@@ -1,0 +1,29 @@
+#criação de projeto react com typescript
+create-react-app primeiro-projeto-react template=typescript
+
+#Instalar o eslint
+yarn add eslint -D
+
+Remover do packge.json
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+
+yarn eslint --init
+
+#Eslint entender importações de arquivos typescript
+yarn add eslint-import-resolver-typescript -D
+
+#configurar o prettier
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+
+#para poder mudar de página via react
+yarn add react-router-dom
+
+#estilização
+yarn add styled-components
+
+
+#para consumir a API
+yarn add axios

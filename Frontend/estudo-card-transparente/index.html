@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app/assets/css/styles.min.css">
+    <title>Cards Transparentes</title>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1 class="title">Maceió TI</h1>
+        </header>
+        <article class="card">
+            <img src="app/assets/img/pin_posto7.webp" class="bg-card" alt="">
+            <section class="content">
+                <h2>01</h2>
+                <h3>Criação de Sites</h3>
+                <p>Criamos seu site personalizado utilizando o melhor da tecnologia disponível, garantindo assim velocidade de acesso a sua página e melhor posicionamento na busca orgânica do Google.</p>
+                <!-- <a href="#">Mais Informações</a> -->
+            </section>
+        </article>
+        <article class="card">
+            <img src="app/assets/img/balanco.webp" class="bg-card" alt="">
+            <section class="content">
+                <h2>02</h2>
+                <h3>Tecnologias</h3>
+                <p>Estamos sempre nos aprimorando e aprendendo novas e melhores tecnologias. Essa página de estudo foi criada com utilizando SASS e Vanilla Tilt Cass</p>
+                <!-- <a href="#">Mais Informações</a> -->
+            </section>
+        </article>
+        <article class="card">
+            <img src="app/assets/img/cadeira.webp" class="bg-card" alt="">
+            <section class="content">
+                <h2>03</h2>
+                <h3>Referência</h3>
+                <p>Página criada com base no vídeo "Card transparente usando HTML5, CSS3 e JavaScript - animações e efeitos." Do canal "EFF#ECT" no YouTube</p>
+                <!-- <a href="#">Mais Informações</a> -->
+            </section>
+        </article>
+    </section>
+    <script src="app/assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5,
+        });
+
+        VanillaTilt.init(document.querySelectorAll(".title"), {
+            max: 0,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5,
+        });
+    </script>
+</body>
+</html>

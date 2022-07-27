@@ -1,0 +1,82 @@
+yarn init -y
+yarn add express
+yarn add typescript -D
+yarn tsc --init
+yarn add @types/express -D
+yarn add ts-node-dev -D
+
+instalar pelo market place o editor config
+clicar na raiz do projeto e clicar na opação genarete .editorconfig
+
+yarn add eslint -D
+yarn eslint --init
+
+yarn add -D eslint-plugin-react@^7.20.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint-plugin-import@^2.21.2 eslint-plugin-jsx-a11y@^6.3.0 eslint-plugin-react-hooks@^4 @typescript-eslint/parser@latest
+
+adcionar ao settings.json após o editor.rules
+
+"[javascript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "[javascriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "[typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "[typescriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+
+
+yarn add eslint-import-resolver-typescript
+
+
+adcionar no .eslintrc após rules
+"settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+
+no mesmo arquivo adicionar dentro de rules
+ "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never"
+      }
+    ]
+
+
+#prettier
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+
+no .eslintrc.json
+em extends adicionar
+"plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+em plugins adicionar
+"prettier"
+
+
+criar arquivo .prettier.config.js
+module.exports = {
+  singleQuote: true,
+  trailingComma: "all",
+  arrowParens: "avoid",
+};
+
+criar arquivo .eslintignore
+/*.js
+node_modules
+dist
