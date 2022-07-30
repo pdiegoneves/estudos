@@ -54,3 +54,11 @@ Para o código quer dizer sempre deixar o código melhor para a próxima pessoa 
 4. pedir ajuda se necessário
 5. refatorar
 6. partir pro próximo desafio
+
+### Vantagens
+
+* Fodo de energia
+* Comprometimento de ir até o fim de pequenos pedaçõs
+* Nos livra da culpa de não terminar nada
+* Elimina a confusão de ter que resolver mil coisas ao mesmo tempo
+* Chance de refatorar pequenos pedaços do código e deixá-lo limpo
