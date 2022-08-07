@@ -34,3 +34,23 @@
  main p {
     font-size: 16px;
  }
+
+ @media (max-width: 576px) {
+   .cabecalho {
+      text-align: center ;
+   }
+   .cabecalho nav{
+      float: none;
+   }
+   .cabecalho nav li {
+      display: block;
+   }
+ }
+
+ @media (max-width: 768px) {}
+
+ @media (max-width: 992px) {}
+
+ @media (max-width:1200px) {}
+
+ @media (min-width:1200px) {}
