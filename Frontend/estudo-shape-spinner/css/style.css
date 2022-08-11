@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+.spinner {
+    width: 100px;
+    height: 100px;
+    animation: Morph 2s infinite;
+    margin: auto;
+}
+
+@keyframes Morph {
+    0%,
+    100% {
+        border-radius:50%;
+        transform: rotate(0deg);
+        background-color: pink;
+    }
+    50% {
+        border-radius:0%;
+        transform: rotate(180deg);
+        background-color: lightblue;
+    }
+}
