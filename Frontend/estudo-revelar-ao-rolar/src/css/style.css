@@ -1,3 +1,7 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
 .reveal {
     position: relative;
     transform: translateY(144px);
@@ -8,4 +12,9 @@
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+p::selection {
+    background-color: black;
+    color: white;
 }
