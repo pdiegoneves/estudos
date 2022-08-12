@@ -1,12 +1,21 @@
 .container {
-    display: flex;
     height: 100vh;
+    width: 100vw;
+    margin: 0;
 }
+body section:nth-child(even) {
+    background-color: aquamarine
+}
+
+body section:nth-child(odd) {
+    background-color: bisque;
+}
+
 .reveal {
     position: relative;
-    transform: translateY(144px);
+    transform: translateY(25%);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 1.5s all ease;
 }
 
 .reveal.active {
