@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100vw;
+    position: relative;
+}
+
+.toolbar ul{
+    position: absolute;
+    background-color: blue;
+    display: block;
+    height: 100vh;
+    width: 5vw;
+    transform: scaleX(1, 2);
+}
+
+@keyframes a-menu {
+    0% {
+        width: 1vw;
+    }
+    100% {
+        width: 5vw;
+    }
+}
+.toolbar ul:hover {
+    animation: a-menu 0.5s ;
+}
+
+
+.content {
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+}
