@@ -12,8 +12,10 @@ let pessoas = [
 //     }
 // }
 
-let pessoasComIdadeDe33Anos = pessoas.filter(function(pessoa){
-    return pessoa.idade === 33
-})
+// let pessoasComIdadeDe33Anos = pessoas.filter(function(pessoa){
+//     return pessoa.idade === 33
+// })
+
+let pessoasComIdadeDe33Anos = pessoas.filter((pessoa) => pessoa.idade === 33)
 
 console.log(pessoasComIdadeDe33Anos)
